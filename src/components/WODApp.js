@@ -13,8 +13,7 @@ function WODApp() {
   // gör funktionen här upp till addoptions... 
 
   const createOption = (input) => {
-    setOptionList(optionList.concat(input))
-    
+    setOptionList([...optionList, input])
   }
 
 

@@ -9,9 +9,11 @@ const AddOption = (props) => {
   }
 
   // onclicken från props, ska skicka input till WODAPP
-  const addOption = () => {
+  const addOption = (e) => {
+    e.preventDefault()
     if(input.length > 0) {
       props.onClickFunc(input)
+      setInput("")
     } else {
       alert("To short. ändra detta dock...")
     }
@@ -20,6 +22,7 @@ const AddOption = (props) => {
 
 
   return (
+    <form>
     <div className="add-input input-group mb-3">
       <input
         name="input"
@@ -33,13 +36,15 @@ const AddOption = (props) => {
       <div className="input-group-append">
         <button
           className="btn btn-outline-secondary"
-          type="button"
+          type="submit"
           onClick={addOption}
         >
           Add Option
         </button>
       </div>
     </div>
+    </form>
+    
   );
 };
 
