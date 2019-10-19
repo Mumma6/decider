@@ -4,8 +4,13 @@ body {
   color: aliceblue;
 }
 
-.navbar-brand {
+.title {
   font-size: 42px;
+  margin-left: 120px;
+}
+
+.faith {
+  margin-left: 120px;
 }
 
 .action-btn {
@@ -27,4 +32,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+}
+
+.error-msg {
+  width: 500px;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.dismiss-btn {
+  float: right;
 }
