@@ -1,12 +1,12 @@
 import React from "react";
-import WODApp from "./components/WODApp";
+import DeciderApp from "./components/DeciderApp";
 
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <WODApp />
+      <DeciderApp />
     </div>
   );
 }

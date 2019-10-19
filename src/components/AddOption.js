@@ -23,18 +23,21 @@ const AddOption = props => {
   return (
     <div>
       <form>
-        <div className="add-input input-group mb-3">
+        <div className="add-input input-group-lg input-group mb-3">
           <input
             name="input"
             value={input}
             onChange={onChange}
+            autocomplete="off"
             type="text"
             className="form-control"
             placeholder="Enter option..."
           />
           <div className="input-group-append">
             <button
-              className="btn btn-outline-secondary"
+              // remove to button when modal is showing
+              style={props.open ? { zIndex: "-1" } : null}
+              className="btn btn-lg btn-outline-secondary"
               type="submit"
               onClick={addOption}
             >

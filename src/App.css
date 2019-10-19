@@ -15,7 +15,7 @@ body {
 
 .action-btn {
   margin-top: 70px;
-  font-size: 42px;
+  font-size: 52px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -25,6 +25,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  font-size: 22px;
 }
 
 .add-input {
@@ -45,4 +46,18 @@ body {
 
 .dismiss-btn {
   float: right;
+  top: 40%;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
 }
