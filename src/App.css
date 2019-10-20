@@ -54,10 +54,31 @@ body {
   transition: opacity 500ms ease-in-out;
 }
 
-.ReactModal__Overlay--after-open{
+.ReactModal__Overlay--after-open {
   opacity: 1;
 }
 
-.ReactModal__Overlay--before-close{
+.ReactModal__Overlay--before-close {
   opacity: 0;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .faith {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+
+  .add-input, .list-group {
+    width: 300px;
+  }
+  .action-btn {
+    font-size: 42px;
+  }
 }
